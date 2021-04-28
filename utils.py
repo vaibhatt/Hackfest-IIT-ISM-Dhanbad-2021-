@@ -1,0 +1,12 @@
+START = "startseq"
+STOP = "endseq"
+EPOCHS = 10
+USE_INCEPTION = True
+WIDTH = 299
+HEIGHT = 299
+OUTPUT_DIM = 2048
+embedding_dim = 200
+vocab_size=1652
+max_length = 34
+model_path = "E:\Projects\Hackfest_IIT_ISM_2021\Image_captioning\saved\saved_weights-20210427T190714Z-001\saved_weights\caption-model.hdf5"
+text_to_sound_lang = 'en'
