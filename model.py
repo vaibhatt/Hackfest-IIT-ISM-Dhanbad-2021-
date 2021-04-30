@@ -5,7 +5,7 @@ from tensorflow.keras.models import Model
 
 
 
-inception_weight_path = r"E:\Projects\Hackfest_IIT_ISM_2021\Image_captioning\saved\inception net\inception_v3_weights_tf_dim_ordering_tf_kernels.h5"
+inception_weight_path = r"Image_captioning\saved\inception net\inception_v3_weights_tf_dim_ordering_tf_kernels.h5"
 if USE_INCEPTION:
   encode_model = InceptionV3(weights = inception_weight_path)
   encode_model = Model(encode_model.input, encode_model.layers[-2].output)
