@@ -7,6 +7,10 @@ import pickle
 from process_data import encodeImage
 from gtts import gTTS   
 import os
+import requests
+from io import BytesIO
+from PIL import Image, ImageFile
+
 
 wordtoidx = pickle.load(open(r"E:\Projects\Hackfest_IIT_ISM_2021\Image_captioning\saved\word indexes\word_to_index","rb"))
 idxtoword = pickle.load(open(r"E:\Projects\Hackfest_IIT_ISM_2021\Image_captioning\saved\word indexes\index_to_word","rb"))
@@ -42,11 +46,21 @@ def text_to_sound(mytext,output_path):
 def play_sound(sound_path):
     os.system(sound_path)
 
-def captionize(img_path,output_path,play_now = False,print_caption = False):
-    cap = evaluate(img_path)
+def captionize(img_path,output_path,play_now = False,print_caption = False,url = False):
+    if url == True:
+        response = requests.get(img_path)
+        img = Image.open(BytesIO(response.content))
+        img.load()
+        response = requests.get(img_path)
+        img = encodeImage(img).reshape((1,OUTPUT_DIM))
+        cap  = generateCaption(img)
+    else:
+        cap = evaluate(img_path)
+
     text_to_sound(cap,output_path)
     if(print_caption):
         print(cap)
     if(play_now):
         play_sound(output_path)
+
 

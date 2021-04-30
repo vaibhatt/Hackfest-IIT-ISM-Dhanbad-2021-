@@ -10,3 +10,4 @@ vocab_size=1652
 max_length = 34
 model_path = "E:\Projects\Hackfest_IIT_ISM_2021\Image_captioning\saved\saved_weights-20210427T190714Z-001\saved_weights\caption-model.hdf5"
 text_to_sound_lang = 'en'
+img_through_web = True
