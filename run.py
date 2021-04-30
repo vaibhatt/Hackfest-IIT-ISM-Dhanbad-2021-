@@ -1,9 +1,16 @@
+import requests
+from io import BytesIO
 from eval import captionize
-
-input_path = r"E:\Projects\Hackfest_IIT_ISM_2021\input_path\cricket.jpg"
-output_path = r"E:\Projects\Hackfest_IIT_ISM_2021\output_path\output.mp3"
+import matplotlib.pyplot as plt
+from PIL import Image
+import time
 
 if __name__=='__main__':
-    captionize(input_path,output_path,play_now=True,print_caption=True)
-
+    root="https://github.com/vaibhatt/Hackfest-IIT-ISM-Dhanbad-2021-/blob/master/TEST_IMAGES/"
+    urls = [root + "1.jpg?raw=true", root + "2.jpg?raw=true", root + "3.jpg?raw=true", root + "4.jpg?raw=true",
+            root + "5.jpg?raw=true", root + "6.jpg?raw=true", root + "7.jpg?raw=true", root + "8.jpg?raw=true",
+            root + "9.jpg?raw=true", root + "10.jpg?raw=true"]
+    output_path = r"C:\Users\Desktop\NST\OBJECT_DETECTION\ouput.mp3"
+    for url in urls:
+        captionize(url, output_path, play_now=True, print_caption=True)
 
