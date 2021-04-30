@@ -11,8 +11,8 @@ from gtts import gTTS
 import os
 import time
 
-idxtoword = pickle.load(open(r"idxtoword.pkl","rb"))
-wordtoidx = pickle.load(open(r"wordtoidx.pkl","rb"))
+idxtoword = pickle.load(open(r"Image_captioning\saved\word indexes\idxtoword.pkl","rb"))
+wordtoidx = pickle.load(open(r"Image_captioning\saved\word indexes\wordtoidx.pkl","rb"))
 
 
 def generateCaption(img_path):
