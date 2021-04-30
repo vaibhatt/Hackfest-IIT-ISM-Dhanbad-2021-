@@ -8,5 +8,5 @@ OUTPUT_DIM = 2048
 embedding_dim = 200
 vocab_size=1652
 max_length = 34
-model_path = "Image_captioning\saved\saved_weights-20210427T190714Z-001\saved_weights\caption-model.hdf5"
+model_path = r"Image_captioning\saved\saved_weights-20210427T190714Z-001\saved_weights\caption-model.hdf5"
 text_to_sound_lang = 'en'
