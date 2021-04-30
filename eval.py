@@ -12,8 +12,8 @@ from io import BytesIO
 from PIL import Image, ImageFile
 
 
-wordtoidx = pickle.load(open(r"E:\Projects\Hackfest_IIT_ISM_2021\Image_captioning\saved\word indexes\word_to_index","rb"))
-idxtoword = pickle.load(open(r"E:\Projects\Hackfest_IIT_ISM_2021\Image_captioning\saved\word indexes\index_to_word","rb"))
+wordtoidx = pickle.load(open(r"Image_captioning\saved\word indexes\word_to_index","rb"))
+idxtoword = pickle.load(open(r"Image_captioning\saved\word indexes\index_to_word","rb"))
 
 
 def generateCaption(photo):
