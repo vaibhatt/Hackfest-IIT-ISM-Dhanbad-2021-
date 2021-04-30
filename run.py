@@ -6,7 +6,6 @@ input_path = "https://github.com/vaibhatt/Hackfest-IIT-ISM-Dhanbad-2021-/blob/67
 output_path = r"/home/xori/github/hackathons/Hackfest-IIT-ISM-Dhanbad-2021-/output_path/output.mp3"
 
 
-if __name__=='__main__':
-    captionize(input_path,output_path,play_now=True,print_caption=True,url = True)
-
-
+if __name__ == '__main__':
+    captionize(input_path, output_path, play_now=True,
+               print_caption=True, url=True)
