@@ -2,3 +2,4 @@ enviroment/
 proposal/
 .vscode/
 data/
+__pycache__/
