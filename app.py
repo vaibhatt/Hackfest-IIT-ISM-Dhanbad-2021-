@@ -17,9 +17,9 @@ from PIL import Image, ImageFile
 
 app = Flask(__name__)
 
-output_path = r"output_path\output.mp3"
-input_path = r"E:\Projects\Hackfest_IIT_ISM_2021\input_path\input.jpg"
-video_url = 'http://192.168.1.3:8080/video?x.mjpeg'
+output_path = r"/home/xori/github/hackathons/Hackfest-IIT-ISM-Dhanbad-2021-/static/output.mp3"
+input_path = r"/home/xori/github/hackathons/Hackfest-IIT-ISM-Dhanbad-2021-/static/a.jpg"
+video_url = 'http://192.168.1.5:8080/video?x.mjpeg'
 
 
 @app.route('/')
