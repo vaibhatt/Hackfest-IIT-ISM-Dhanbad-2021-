@@ -36,12 +36,13 @@ def api():
         w,h,l = frame.shape
         dim = (int(w/3),int(h/3))
         #frame = cv2.resize(frame, dim, interpolation=cv2.INTER_AREA)
-        cv2.imshow("capturing",frame)
+        #cv2.imshow("capturing",frame)
         if cv2.waitKey(1) & 0xFF == ord('q'):
             break
         if(request.method == 'POST'):
             cv2.imwrite(input_path,frame)
             captionize(input_path, input_path,play_now=True,print_caption=True)
+            break
 
     cap.release()
     cv2.destroyAllWindows()
