@@ -6,7 +6,14 @@
 
 {% block body %}
     <form action = "/api" method = "POST" enctype="multipart/form-data">
-        <input type="file" id="img" name="img" accept="image/*">
+        <p>Works best with JPG Image</p>
+        <input type="file" id="file" name="img" accept="image/* " required>
+        <label for="file">
+            <i class="material-icons">
+                add_photo_alternate
+            </i>&nbsp;
+            Choose an Image
+        </label>
         <input type="submit">
     </form>
 {% endblock %}
