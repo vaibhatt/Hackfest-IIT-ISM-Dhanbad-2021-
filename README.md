@@ -17,9 +17,12 @@ Submission for HackFest 2021
 
 ## Screenshots
 
-<Placeholder 1>
+![front](https://user-images.githubusercontent.com/39991296/116768163-364d2e00-aa52-11eb-800c-f774633ffdb2.png)
 
-<Placeholder 2>
+-----------
+
+![back](https://user-images.githubusercontent.com/39991296/116768161-33523d80-aa52-11eb-87ab-54ee6c0b0e6a.png)
+
 
 ## Future Plans
 
