@@ -1,15 +1,14 @@
 from flask import Flask, render_template, request, Response, redirect, url_for
 
-import os
-
 from eval import captionize
+from capture import CaptureNPredict
 from utils import *
 
 app = Flask(__name__)
 
-img_name = "a.jpg"
-input_path = r"/home/xori/github/hackathons/Hackfest-IIT-ISM-Dhanbad-2021-/static/a.jpg"
-output_path = r"/home/xori/github/hackathons/Hackfest-IIT-ISM-Dhanbad-2021-/static/output.mp3"
+output_path = r"output_path\output.mp3"
+input_path = r"E:\Projects\Hackfest_IIT_ISM_2021\input_path\input.jpg"
+video_url = 'http://192.168.1.3:8080/video?x.mjpeg'
 
 
 @app.route('/')
@@ -20,11 +19,8 @@ def index():
 @app.route('/api', methods=['GET', 'POST'])
 def api():
     if(request.method == 'POST'):
-        f = request.files['img']
-        f.save("static/a.jpg")
 
-        captionize(input_path, output_path, play_now=False,
-                   print_caption=True, url=False)
+        CaptureNPredict(img_path = input_path, sound_path = output_path ,server_address = video_url)
 
         return render_template('result.html')
 

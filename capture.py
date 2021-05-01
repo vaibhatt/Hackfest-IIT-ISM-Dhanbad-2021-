@@ -13,10 +13,6 @@ import requests
 from io import BytesIO
 from PIL import Image, ImageFile
 
-output_path = r"output_path\output.mp3"
-input_path = r"E:\Projects\Hackfest_IIT_ISM_2021\input_path\input.jpg"
-video_url = 'http://192.168.1.3:8080/video?x.mjpeg'
-
 def CaptureNPredict(img_path,sound_path,server_address,play_now = True,print_caption = True,show_video = True):
     cap = cv2.VideoCapture(f"{video_url}")
     while True:
@@ -33,5 +29,3 @@ def CaptureNPredict(img_path,sound_path,server_address,play_now = True,print_cap
 
     cap.release()
     cv2.destroyAllWindows()
-
-CaptureNPredict(img_path = input_path, sound_path = output_path ,server_address = video_url)
