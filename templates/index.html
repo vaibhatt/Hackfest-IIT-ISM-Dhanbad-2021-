@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block head %}
+    <title>Home | Hackoverflow</title>
+{% endblock %}
+
+{% block body %}
+    <form action = "/api" method = "POST" enctype="multipart/form-data">
+        <input type="file" id="img" name="img" accept="image/*">
+        <input type="submit">
+    </form>
+{% endblock %}
