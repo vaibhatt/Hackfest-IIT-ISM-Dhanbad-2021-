@@ -1,5 +1,4 @@
 from flask import Flask, render_template, request, Response, redirect, url_for
-
 import cv2
 from eval import captionize
 from utils import *
