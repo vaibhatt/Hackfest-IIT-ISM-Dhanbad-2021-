@@ -4,7 +4,6 @@ from utils import *
 from tensorflow.keras.models import Model
 
 
-
 inception_weight_path = r"/home/xori/github/hackathons/Hackfest-IIT-ISM-Dhanbad-2021-/Image_captioning/saved/inception net/inception_v3_weights_tf_dim_ordering_tf_kernels.h5"
 if USE_INCEPTION:
   encode_model = InceptionV3(weights = inception_weight_path)
