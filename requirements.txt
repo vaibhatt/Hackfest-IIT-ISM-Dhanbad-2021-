@@ -1,4 +1,5 @@
 absl-py==0.12.0
+opencv-python==4.5.1.48
 appdirs==1.4.4
 apturl==0.5.2
 astunparse==1.6.3
