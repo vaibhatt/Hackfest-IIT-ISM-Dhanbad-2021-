@@ -24,10 +24,10 @@ THE ML PIPELINE STARTS WITH THE USE OF THE PRE-TRAINED AND OPEN-SOURCE INCEPTION
 
 ## Technologies Used
 
-->Python, HTML, CSS ,JUPYTER NOTEBOOK
-->ML/DL libraries : Tensorflow  / keras, n umpy , pandas etc.
-->Flask, Jinja2 Templating Engine
-->IP Webcam Config
+* Python, HTML, CSS ,JUPYTER NOTEBOOK
+* ML/DL libraries : Tensorflow  / keras, n umpy , pandas etc.
+* Flask, Jinja2 Templating Engine
+* IP Webcam Config
 
 ## Screenshots
 
@@ -38,10 +38,16 @@ THE ML PIPELINE STARTS WITH THE USE OF THE PRE-TRAINED AND OPEN-SOURCE INCEPTION
 ![back](https://github.com/vaibhatt/Hackfest-IIT-ISM-Dhanbad-2021-/blob/master/screenshot/Screenshot%20(3).png)
 
 ## Advantages
-
+* The equipment used is cost efficient .
+* The equipment is durable because of its wireless nature and can be used in all weather conditions.
+* Materials used in the equipment are easily available.
+* It can be easily used by a blind person.
+* By using this method we will reduce the human assistance required by a blind person to a great extent and thus make him/her independent.
 
 ## Future Plans
-
+* To make the product more efficient and product ready, the model has to be trained on a larger and more diverse dataset
+* An app has to be build instead of webapp to make it accessible to the blind through his/her phone.
+* Camera hardware devices such as ESP32 camera module can be used in order to click the image in real time.
 
 ## Team
 
