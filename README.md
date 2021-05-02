@@ -31,11 +31,11 @@ THE ML PIPELINE STARTS WITH THE USE OF THE PRE-TRAINED AND OPEN-SOURCE INCEPTION
 
 ## Screenshots
 
-![front](https://user-images.githubusercontent.com/39991296/116768163-364d2e00-aa52-11eb-800c-f774633ffdb2.png)
+![front](https://github.com/vaibhatt/Hackfest-IIT-ISM-Dhanbad-2021-/blob/master/screenshot/Screenshot%20(2).png)
 
 -----------
 
-![back](https://user-images.githubusercontent.com/39991296/116768161-33523d80-aa52-11eb-87ab-54ee6c0b0e6a.png)
+![back](https://github.com/vaibhatt/Hackfest-IIT-ISM-Dhanbad-2021-/blob/master/screenshot/Screenshot%20(3).png)
 
 ## Advantages
 
