@@ -54,5 +54,5 @@ THE ML PIPELINE STARTS WITH THE USE OF THE PRE-TRAINED AND OPEN-SOURCE INCEPTION
 - [Abhibhaw Asthana](https://github.com/abhibhaw)
 - Pritish Samal
 - Suyash Shrivastava
-- Vaibhav Bhatt
+- [Vaibhav Bhatt](https://github.com/vaibhatt)
 - Vatsal Ojha
